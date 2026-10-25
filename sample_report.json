@@ -1,0 +1,45 @@
+{
+  "repository": "https://github.com/Quttoshi/Smart-RAG",
+  "violations": [
+    {
+      "rule_id": "CI-001",
+      "category": "ci_cd",
+      "severity": "medium",
+      "file": null,
+      "line": null,
+      "description": "No CI/CD is configured for this application, despite presence of both backend and frontend and test/lint scripts in frontend.",
+      "evidence": "No workflows exist in .github/workflows, and no alternative CI systems (.gitlab-ci, CircleCI, Travis, Jenkins) are present. No test/build/lint automation exists—only manual scripts in package.json and README.",
+      "recommendation": "Add CI to automatically lint (ruff/eslint), test, and build both backend and frontend on push/PR to reduce integration risks."
+    },
+    {
+      "rule_id": "CQ-001",
+      "category": "code_quality",
+      "severity": "medium",
+      "file": null,
+      "line": null,
+      "description": "No lint/format/tooling or configuration for the backend Python code: neither ruff, black, flake8, nor pyproject.toml config found.",
+      "evidence": "run_ruff found no lint config in backend or project root. Only frontend/eslint.config.js is present for JavaScript/TypeScript.",
+      "recommendation": "Add ruff or flake8 (and ideally black or similar) with CI enforcement for Python code to catch real defects and enforce standards."
+    },
+    {
+      "rule_id": "DEP-001",
+      "category": "dependency_management",
+      "severity": "medium",
+      "file": "backend/requirements.txt",
+      "line": 2,
+      "description": "Insufficient version pinning for a deployable Python application: most requirements use only \">=\" and there is no lockfile.",
+      "evidence": "requirements.txt entries are mostly '>=', e.g. fastapi>=0.104.0, uvicorn[standard]>=0.24.0, etc.; only some deps pinned. No lockfile or constraints file present. This is an app with Docker deployment, not a library.",
+      "recommendation": "Fully pin all production dependencies (==) or introduce a lockfile (e.g., piptools, uv-lock, poetry.lock) to ensure reproducible deploys."
+    },
+    {
+      "rule_id": "TEST-001",
+      "category": "testing",
+      "severity": "medium",
+      "file": null,
+      "line": null,
+      "description": "No tests (unit, integration, or frontend) exist for either backend or frontend.",
+      "evidence": "No Python or JS/TS test files/functions present. Searches for def test_, describe(, test(, and unittest/pytest/nose imports all returned no results in code or config.",
+      "recommendation": "Add test suites for backend (pytest or unittest) and frontend (Jest, Vitest, or similar) covering basic and critical flows."
+    }
+  ]
+}
