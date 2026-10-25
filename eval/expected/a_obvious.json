@@ -1,0 +1,14 @@
+[
+  {"id": "A1", "categories": ["repository_hygiene", "collaboration"], "files": [null, "README.md"], "keywords": ["readme"]},
+  {"id": "A2", "categories": ["repository_hygiene"], "files": [null, ".gitignore"], "keywords": ["gitignore"]},
+  {"id": "A3", "categories": ["repository_hygiene"], "files": ["__pycache__/", "__pycache__", "__pycache__/utils.cpython-311.pyc", null], "keywords": ["pycache", "pyc", "bytecode"]},
+  {"id": "A4", "categories": ["security", "configuration", "repository_hygiene"], "files": [".env"], "keywords": []},
+  {"id": "A5", "categories": ["security"], "files": ["app.py"], "keywords": ["aws", "credential", "key", "secret"]},
+  {"id": "A6", "categories": ["configuration"], "files": ["app.py"], "keywords": ["path", "machine", "absolute", "c:"]},
+  {"id": "A7", "categories": ["testing"], "files": [null], "keywords": ["test"]},
+  {"id": "A8", "categories": ["ci_cd", "testing", "build_release"], "files": [null], "keywords": ["ci", "continuous", "workflow", "pipeline"]},
+  {"id": "A9", "categories": ["dependency_management"], "files": ["requirements.txt"], "keywords": ["pin", "version", "unpinned", "constraint"]},
+  {"id": "A10", "categories": ["repository_hygiene"], "files": ["debug.log"], "keywords": []},
+  {"id": "A11", "categories": ["code_quality"], "files": ["app.py"], "keywords": ["except", "swallow"]},
+  {"id": "A12", "categories": ["code_quality"], "files": [null], "keywords": ["lint", "format"]}
+]

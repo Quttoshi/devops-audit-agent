@@ -1,0 +1,13 @@
+[
+  {"id": "B1", "categories": ["ci_cd"], "files": [".github/workflows/ci.yml"], "keywords": ["branch", "trigger", "master"]},
+  {"id": "B2", "categories": ["ci_cd", "testing"], "files": [".github/workflows/ci.yml"], "keywords": ["continue-on-error", "continue on error", "fail"]},
+  {"id": "B3", "categories": ["security", "ci_cd"], "files": [".github/workflows/ci.yml"], "keywords": ["inject", "head_ref"]},
+  {"id": "B4", "categories": ["security", "ci_cd"], "files": [".github/workflows/ci.yml"], "keywords": ["permission", "write"]},
+  {"id": "B5", "categories": ["security", "ci_cd"], "files": [".github/workflows/ci.yml"], "keywords": ["pin", "master", "mutable", "third-party", "third party"]},
+  {"id": "B6", "categories": ["configuration", "security"], "files": ["orders/settings/prod.py"], "keywords": ["debug", "allowed_hosts", "host"]},
+  {"id": "B7", "categories": ["configuration", "repository_hygiene"], "files": [".vscode/settings.json", ".vscode/"], "keywords": []},
+  {"id": "B8", "categories": ["build_release", "configuration", "dependency_management"], "files": ["Dockerfile"], "keywords": ["latest", "tag", "base image"]},
+  {"id": "B9", "categories": ["security"], "files": ["Dockerfile"], "keywords": ["token", "secret", "credential", "env"]},
+  {"id": "B10", "categories": ["security"], "files": ["deploy/credentials.pem", null], "keywords": ["history", "private key", "credentials.pem", "pem"]},
+  {"id": "B11", "categories": ["dependency_management"], "files": ["requirements.txt", "pyproject.toml", null], "keywords": ["inconsist", "conflict", "mismatch", "differ", "contradict", "diverge"]}
+]
