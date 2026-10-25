@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Agent outputs (sample_report.json and sample_trace.jsonl are committed on purpose)
+report*.json
+*.trace.jsonl
+eval/fixtures/
+eval/results/
+
+# Course material
+Assignment_*.pdf
